@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 # подключаем ещё приложения
     'django.contrib.sites',
     'django.contrib.flatpages',
+    'fpages'
 ]
 
 MIDDLEWARE = [
@@ -131,3 +132,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 SITE_ID = 1
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static"
+]
